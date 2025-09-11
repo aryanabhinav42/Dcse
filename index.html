@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCSE App</title>
+    <style>
+       body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* Ensure body takes full height */
+    display: flex;
+    flex-direction: column;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text for contrast */
+}
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: #1e1e1e; /* Dark header background */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+}
+
+.header-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff; /* White title for contrast */
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-button {
+    padding: 8px 16px;
+    background-color: #0288d1; /* Slightly lighter blue for buttons */
+    color: #ffffff; /* White text */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    background-color: #0277bd; /* Darker blue on hover */
+}
+
+main {
+    flex: 1; /* Take up remaining space */
+    padding: 20px;
+    text-align: center;
+    background-color: #121212; /* Match body background */
+    color: #e0e0e0; /* Light text */
+}
+
+footer {
+    background-color: #1e1e1e; /* Dark footer background */
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.3);
+    color: #e0e0e0; /* Light text */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+
+    .header-title {
+        font-size: 1.2em;
+    }
+
+    .nav-button {
+        padding: 6px 12px;
+        font-size: 0.9em;
+    }
+}
+#lang {
+            height: 90px;
+            width: 125px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-title">DCSE</div>
+        <div class="nav-buttons">
+            <a href="index.html" class="nav-button">Home</a>
+            <a href="premium.html" class="nav-button">Premium</a>
+        </div>
+    </header>
+    <main>
+        <!-- Add your main content here -->
+        <h1>Welcome to DCSE App</h1>
+        <p>the ultimate app designed to empower students to master coding languages and AI concepts with ease! Dive into interactive lessons, hands-on projects, and real-world challenges to build your skills from the ground up. With our free version, you get access to engaging tutorials and practice exercises. Unlock the full potential with DCSE Premium to gain exclusive access to comprehensive notes, expertly curated questions, and advanced resources to accelerate your learning journey. Start coding, explore AI, and shape your future today!
+        </p>
+           <div class="Lan">
+        <a href="python.html"><button id="lang">Python</button></a>
+            <a href="cpp.html"><button id="lang">C++</button></a><br><br>
+    <a href="java.html"><button id="lang">JAVA</button></a>
+    </div>
+    </main>
+ 
+    <footer>
+        Author :- Abhinav Aryan
+    </footer>
+</body>
+</html>
