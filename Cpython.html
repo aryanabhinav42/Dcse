@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Python Course for Beginners</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #007BFF;
+        }
+        code {
+            background: #f8f8f8;
+            border: 1px solid #ddd;
+            padding: 10px;
+            display: block;
+            margin: 10px 0;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        pre {
+            overflow-x: auto;
+        }
+        ul, ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .exercise, .note {
+            background: #e9f7ef;
+            padding: 10px;
+            border-left: 4px solid #28a745;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .note {
+            background: #fff3cd;
+            border-left-color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Complete Python Course for Beginners</h1>
+
+        <h2>Course Overview</h2>
+        <p>This course is designed for absolute beginners with no prior programming experience. By the end, you'll be able to write Python programs, understand core programming concepts, and build simple projects. The course is hands-on, with examples and exercises to reinforce learning.</p>
+        <ul>
+            <li><strong>Duration</strong>: Approximately 4-6 weeks (assuming 2-3 hours per week)</li>
+            <li><strong>Prerequisites</strong>: None</li>
+            <li><strong>Tools Needed</strong>:
+                <ul>
+                    <li>Python (version 3.x) installed (download from <a href="https://python.org" target="_blank">python.org</a>)</li>
+                    <li>A code editor (e.g., VS Code, PyCharm, or IDLE)</li>
+                    <li>Optional: Online platforms like Replit or Google Colab for practice</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Module 1: Introduction to Python</h2>
+        <h3>1.1 What is Python?</h3>
+        <p>Python is a high-level, versatile programming language known for its readability and simplicity. It is used for web development, data analysis, automation, AI, and more.</p>
+
+        <h3>1.2 Installing Python</h3>
+        <p>Download Python from <a href="https://www.python.org/downloads/" target="_blank">python.org</a>. Verify installation by running <code>python --version</code> in your terminal/command prompt.</p>
+
+        <h3>1.3 Writing Your First Program</h3>
+        <p>Open a code editor and create a file named <code>hello.py</code>. Write and run the following code:</p>
+        <pre><code>print("Hello, World!")</code></pre>
+        <p><strong>Explanation</strong>: The <code>print()</code> function outputs text to the console.</p>
+
+        <h3>1.4 Using an IDE or Editor</h3>
+        <p>Install Visual Studio Code or PyCharm for a better coding experience. Practice running <code>hello.py</code> from the editor or terminal (<code>python hello.py</code>).</p>
+
+        <div class="exercise">
+            <strong>Exercise</strong>:
+            <ol>
+                <li>Write a program that prints your name.</li>
+                <li>Modify the program to print "Hello, [Your Name]!".</li>
+            </ol>
+        </div>
+
+        <h2>Module 2: Python Basics</h2>
+        <h3>2.1 Variables and Data Types</h3>
+        <p>Variables store data (e.g., numbers, text). Common data types: integers (<code>int</code>), floating-point numbers (<code>float</code>), strings (<code>str</code>), booleans (<code>bool</code>).</p>
+        <pre><code>name = "Alice"  # String
+age = 25        # Integer
+height = 5.5    # Float
+is_student = True  # Boolean
+
+print(name, age, height, is_student)</code></pre>
+
+        <h3>2.2 Basic Operations</h3>
+        <p>Arithmetic: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>//</code> (integer division), <code>%</code> (modulus), <code>**</code> (exponentiation).</p>
+        <pre><code>a = 10
+b = 3
+print(a + b)  # Addition: 13
+print(a * b)  # Multiplication: 30
+print(a // b) # Integer division: 3
+print(a % b)  # Modulus: 1
+print(a ** 2) # Exponentiation: 100</code></pre>
+
+        <h3>2.3 Strings</h3>
+        <p>Strings are sequences of characters enclosed in quotes (<code>'</code> or <code>"</code>). String operations: concatenation (<code>+</code>), repetition (<code>*</code>), slicing.</p>
+        <pre><code>greeting = "Hello"
+name = "Bob"
+message = greeting + ", " + name + "!"  # Concatenation
+print(message)  # Output: Hello, Bob!
+print(greeting * 2)  # Output: HelloHello
+print(name[0])  # Output: B (first character)</code></pre>
+
+        <h3>2.4 Input from Users</h3>
+        <p>Use <code>input()</code> to get user input.</p>
+        <pre><code>name = input("Enter your name: ")
+print("Hello, " + name + "!")</code></pre>
+
+        <div class="exercise">
+            <strong>Exercises</strong>:
+            <ol>
+                <li>Create a program that asks for two numbers and prints their sum, difference, product, and quotient.</li>
+                <li>Write a program that asks for a user’s name and age, then prints a message like: "Hi [Name], you are [Age] years old!"</li>
+                <li>Write a program that takes a string input and prints it in reverse.</li>
+            </ol>
+        </div>
+
+        <h2>Module 3: Control Flow</h2>
+        <h3>3.1 Conditionals (if, elif, else)</h3>
+        <p>Use <code>if</code> statements to make decisions.</p>
+        <pre><code>age = int(input("Enter your age: "))
+if age >= 18:
+    print("You are an adult.")
+elif age >= 13:
+    print("You are a teenager.")
+else:
+    print("You are a child.")</code></pre>
+
+        <h3>3.2 Comparison and Logical Operators</h3>
+        <p>Comparison: <code>==</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code><br>
+        Logical: <code>and</code>, <code>or</code>, <code>not</code></p>
+        <pre><code>score = 85
+if score >= 90 and score <= 100:
+    print("Grade: A")
+elif score >= 80:
+    print("Grade: B")
+else:
+    print("Grade: C or below")</code></pre>
+
+        <h3>3.3 Loops</h3>
+        <p><strong>For Loop</strong>: Iterate over a sequence (e.g., range, list).</p>
+        <pre><code>for i in range(5):  # Prints 0 to 4
+    print(i)</code></pre>
+        <p><strong>While Loop</strong>: Repeats as long as a condition is true.</p>
+        <pre><code>count = 1
+while count <= 5:
+    print(count)
+    count += 1</code></pre>
+
+        <h3>3.4 Break and Continue</h3>
+        <p><code>break</code>: Exits a loop.<br><code>continue</code>: Skips the current iteration.</p>
+        <pre><code>for i in range(10):
+    if i == 5:
+        break  # Stops at 5
+    print(i)
+
+for i in range(10):
+    if i % 2 == 0:
+        continue  # Skips even numbers
+    print(i)</code></pre>
+
+        <div class="exercise">
+            <strong>Exercises</strong>:
+            <ol>
+                <li>Write a program that checks if a number is even or odd.</li>
+                <li>Create a program that prints all numbers from 1 to 10 except 7.</li>
+                <li>Write a program that asks for a password and allows 3 attempts to enter the correct one ("secret").</li>
+            </ol>
+        </div>
+
+        <h2>Module 4: Data Structures</h2>
+        <h3>4.1 Lists</h3>
+        <p>Lists are ordered, mutable collections.</p>
+        <pre><code>fruits = ["apple", "banana", "cherry"]
+print(fruits[0])  # Output: apple
+fruits.append("orange")  # Add item
+fruits.remove("banana")  # Remove item
+print(fruits)  # Output: ['apple', 'cherry', 'orange']</code></pre>
+
+        <h3>4.2 Tuples</h3>
+        <p>Tuples are ordered, immutable collections.</p>
+        <pre><code>coordinates = (3, 4)
+print(coordinates[0])  # Output: 3</code></pre>
+
+        <h3>4.3 Dictionaries</h3>
+        <p>Dictionaries store key-value pairs.</p>
+        <pre><code>student = {"name": "Alice", "age": 20, "major": "CS"}
+print(student["name"])  # Output: Alice
+student["grade"] = "A"  # Add key-value pair
+print(student)  # Output: {'name': 'Alice', 'age': 20, 'major': 'CS', 'grade': 'A'}</code></pre>
+
+        <h3>4.4 Sets</h3>
+        <p>Sets store unique, unordered items.</p>
+        <pre><code>numbers = {1, 2, 2, 3}
+print(numbers)  # Output: {1, 2, 3}
+numbers.add(4)
+print(numbers)  # Output: {1, 2, 3, 4}</code></pre>
+
+        <div class="exercise">
+            <strong>Exercises</strong>:
+            <ol>
+                <li>Create a list of 5 favorite foods and print the second and last items.</li>
+                <li>Write a program that stores a dictionary of 3 people with their names and ages, then prints each person’s details.</li>
+                <li>Create a set of numbers and check if a user-input number is in the set.</li>
+            </ol>
+        </div>
+
+        <h2>Module 5: Functions</h2>
+        <h3>5.1 Defining Functions</h3>
+        <p>Use <code>def</code> to create a function.</p>
+        <pre><code>def greet(name):
+    return "Hello, " + name + "!"
+
+print(greet("Alice"))  # Output: Hello, Alice!</code></pre>
+
+        <h3>5.2 Parameters and Return Values</h3>
+        <p>Functions can take multiple parameters and return values.</p>
+        <pre><code>def add(a, b):
+    return a + b
+
+result = add(5, 3)
+print(result)  # Output: 8</code></pre>
+
+        <h3>5.3 Default Parameters and Keyword Arguments</h3>
+        <pre><code>def introduce(name, age=18):
+    return f"{name} is {age} years old."
+
+print(introduce("Bob"))  # Output: Bob is 18 years old.
+print(introduce(name="Alice", age=20))  # Output: Alice is 20 years old.</code></pre>
+
+        <h3>5.4 Scope</h3>
+        <p>Variables defined inside a function are local.</p>
+        <pre><code>x = 10  # Global
+def my_function():
+    x = 5  # Local
+    print(x)  # Output: 5
+
+my_function()
+print(x)  # Output: 10</code></pre>
+
+        <div class="exercise">
+            <strong>Exercises</strong>:
+            <ol>
+                <li>Write a function that calculates the square of a number.</li>
+                <li>Create a function that takes a list of numbers and returns the maximum.</li>
+                <li>Write a function that converts Celsius to Fahrenheit.</li>
+            </ol>
+        </div>
+
+        <h2>Module 6: Working with Files</h2>
+        <h3>6.1 Reading Files</h3>
+        <p>Use <code>open()</code> to read a file.</p>
+        <pre><code>with open("example.txt", "r") as file:
+    content = file.read()
+    print(content)</code></pre>
+
+        <h3>6.2 Writing Files</h3>
+        <p>Write or append to a file.</p>
+        <pre><code>with open("example.txt", "w") as file:
+    file.write("Hello, Python!\n")
+
+with open("example.txt", "a") as file:
+    file.write("Appending this line.\n")</code></pre>
+
+        <div class="exercise">
+            <strong>Exercise</strong>:
+            <ol>
+                <li>Write a program that creates a file and writes 5 user-input names to it.</li>
+                <li>Read the file and print the names in uppercase.</li>
+            </ol>
+        </div>
+
+        <h2>Module 7: Error Handling</h2>
+        <p>Handle errors gracefully using try-except.</p>
+        <pre><code>try:
+    number = int(input("Enter a number: "))
+    print(100 / number)
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+except ValueError:
+    print("Please enter a valid number!")</code></pre>
+
+        <div class="exercise">
+            <strong>Exercise</strong>:
+            <ol>
+                <li>Write a program that asks for two numbers and divides them, handling division by zero and invalid input errors.</li>
+                <li>Create a program that tries to read a file and handles the case where the file doesn’t exist.</li>
+            </ol>
+        </div>
+
+        <h2>Module 8: Modules and Libraries</h2>
+        <h3>8.1 Importing Modules</h3>
+        <p>Use built-in modules like <code>math</code> and <code>random</code>.</p>
+        <pre><code>import math
+print(math.sqrt(16))  # Output: 4.0
+
+import random
+print(random.randint(1, 10))  # Random number between 1 and 10</code></pre>
+
+        <h3>8.2 Installing External Libraries</h3>
+        <p>Use <code>pip</code> to install libraries (e.g., <code>pip install requests</code>).</p>
+        <pre><code>import requests
+response = requests.get("https://api.github.com")
+print(response.status_code)  # Output: 200 (if successful)</code></pre>
+
+        <div class="exercise">
+            <strong>Exercise</strong>:
+            <ol>
+                <li>Write a program that uses the <code>math</code> module to calculate the area of a circle given its radius.</li>
+                <li>Use the <code>random</code> module to simulate a dice roll (1 to 6).</li>
+            </ol>
+        </div>
+
+        <h2>Module 9: Mini Projects</h2>
+        <h3>Project 1: Number Guessing Game</h3>
+        <p>Generate a random number and let the user guess it.</p>
+        <pre><code>import random
+
+number = random.randint(1, 100)
+attempts = 0
+
+while True:
+    guess = int(input("Guess the number (1-100): "))
+    attempts += 1
+    if guess == number:
+        print(f"Correct! It took you {attempts} attempts.")
+        break
+    elif guess < number:
+        print("Too low!")
+    else:
+        print("Too high!")</code></pre>
+
+        <h3>Project 2: To-Do List</h3>
+        <p>Create a program to manage a to-do list.</p>
+        <pre><code>tasks = []
+
+def add_task(task):
+    tasks.append(task)
+    print(f"Added: {task}")
+
+def view_tasks():
+    if not tasks:
+        print("No tasks!")
+    else:
+        for i, task in enumerate(tasks, 1):
+            print(f"{i}. {task}")
+
+while True:
+    action = input("Enter 'add', 'view', or 'quit': ")
+    if action == "add":
+        task = input("Enter task: ")
+        add_task(task)
+    elif action == "view":
+        view_tasks()
+    elif action == "quit":
+        break</code></pre>
+
+        <h3>Project 3: Simple Calculator</h3>
+        <p>Build a calculator for basic operations.</p>
+        <pre><code>def calculator():
+    num1 = float(input("Enter first number: "))
+    op = input("Enter operator (+, -, *, /): ")
+    num2 = float(input("Enter second number: "))
+    
+    if op == "+":
+        print(num1 + num2)
+    elif op == "-":
+        print(num1 - num2)
+    elif op == "*":
+        print(num1 * num2)
+    elif op == "/":
+        if num2 != 0:
+            print(num1 / num2)
+        else:
+            print("Cannot divide by zero!")
+    else:
+        print("Invalid operator!")
+
+calculator()</code></pre>
+
+        <div class="exercise">
+            <strong>Exercise</strong>:
+            <ol>
+                <li>Enhance the number guessing game to limit the number of attempts.</li>
+                <li>Add a feature to the to-do list to mark tasks as completed.</li>
+                <li>Extend the calculator to handle more operations (e.g., exponentiation).</li>
+            </ol>
+        </div>
+
+        <h2>Module 10: Next Steps</h2>
+        <h3>10.1 Advanced Topics to Explore</h3>
+        <ul>
+            <li>Object-Oriented Programming (OOP): Classes and objects.</li>
+            <li>Working with libraries like <code>pandas</code> for data analysis or <code>tkinter</code> for GUIs.</li>
+            <li>Web development with <code>Flask</code> or <code>Django</code>.</li>
+            <li>Data science with <code>numpy</code> and <code>matplotlib</code>.</li>
+        </ul>
+
+        <h3>10.2 Resources</h3>
+        <ul>
+            <li><strong>Books</strong>:
+                <ul>
+                    <li>"Python Crash Course" by Eric Matthes</li>
+                    <li>"Automate the Boring Stuff with Python" by Al Sweigart (<a href="https://automatetheboringstuff.com/" target="_blank">free online</a>)</li>
+                </ul>
+            </li>
+            <li><strong>Online Platforms</strong>:
+                <ul>
+                    <li>Codecademy, Coursera, or freeCodeCamp for interactive Python courses.</li>
+                    <li>LeetCode or HackerRank for practice problems.</li>
+                </ul>
+            </li>
+            <li><strong>Communities</strong>: Join Python communities on X or Reddit (e.g., <a href="https://www.reddit.com/r/learnpython/" target="_blank">r/learnpython</a>).</li>
+        </ul>
+
+        <h3>10.3 Final Project</h3>
+        <p>Build a personal project, such as:</p>
+        <ul>
+            <li>A simple text-based adventure game.</li>
+            <li>A program to analyze a CSV file (e.g., budget tracker).</li>
+            <li>A web scraper using <code>requests</code> and <code>beautifulsoup</code>.</li>
+        </ul>
+
+        <div class="note">
+            <strong>Additional Notes</strong>:
+            <ul>
+                <li><strong>Practice</strong>: Code daily, even if it’s just 15-30 minutes. Use platforms like Replit for quick practice.</li>
+                <li><strong>Debugging</strong>: Learn to read error messages and use <code>print()</code> to debug.</li>
+                <li><strong>Version Control</strong>: Explore Git and GitHub for managing your code.</li>
+                <li><strong>Ask for Help</strong>: If stuck, search for solutions on X or ask in programming communities.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
