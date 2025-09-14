@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Java Course for Beginners</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #007BFF;
+        }
+        code {
+            background: #f8f8f8;
+            border: 1px solid #ddd;
+            padding: 10px;
+            display: block;
+            margin: 10px 0;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        pre {
+            overflow-x: auto;
+        }
+        ul, ol {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .exercise, .note {
+            background: #e9f7ef;
+            padding: 10px;
+            border-left: 4px solid #28a745;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .note {
+            background: #fff3cd;
+            border-left-color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Complete Java Course for Beginners</h1>
+
+        <h2>Course Overview</h2>
+        <p>This course is designed for absolute beginners with no prior programming experience. By the end, you'll be able to write Java programs, understand core programming concepts, and build simple projects. The course is hands-on, with examples and exercises to reinforce learning.</p>
+        <ul>
+            <li><strong>Duration</strong>: Approximately 4-6 weeks (assuming 2-3 hours per week)</li>
+            <li><strong>Prerequisites</strong>: None</li>
+            <li><strong>Tools Needed</strong>:
+                <ul>
+                    <li>Java Development Kit (JDK) installed (download from <a href="https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank">oracle.com</a> or use OpenJDK).</li>
+                    <li>A code editor or IDE (e.g., IntelliJ IDEA, Eclipse, or VS Code).</li>
+                    <li>Optional: Online platforms like <a href="https://replit.com/" target="_blank">Replit</a> or <a href="https://www.jdoodle.com/online-java-compiler/" target="_blank">JDoodle</a> for practice.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Module 1: Introduction to Java</h2>
+        <h3>1.1 What is Java?</h3>
+        <p>Java is a high-level, object-oriented programming language known for its portability and robustness. It is widely used for web applications, mobile apps (Android), enterprise software, and more.</p>
+
+        <h3>1.2 Setting Up Your Environment</h3>
+        <p>Install the JDK and verify by running <code>java -version</code> and <code>javac -version</code> in the terminal. Set up an IDE like IntelliJ IDEA or Eclipse for easier coding.</p>
+
+        <h3>1.3 Writing Your First Program</h3>
+        <p>Create a file named <code>HelloWorld.java</code> (file name must match class name) and write:</p>
+        <pre><code>public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+</code></pre>
+        <p><strong>Explanation</strong>: <code>public static void main</code> is the entry point, and <code>System.out.println</code> outputs text to the console.</p>
+        <p><strong>Compile and Run</strong>: Compile with <code>javac HelloWorld.java</code> (creates <code>HelloWorld.class</code>) and run with <code>java HelloWorld</code>.</p>
+
+        <h3>1.4 Using an IDE</h3>
+        <p>Use IntelliJ IDEA or Eclipse for a streamlined experience. Practice compiling and running <code>HelloWorld.java</code> in your IDE.</p>
+
+        <div class="exercise">
+            <strong>Exercise</strong>:
+            <ol>
+                <li>Write a program that prints your name.</li>
+                <li>Modify the program to print "Hello, [Your Name]!".</li>
+            </ol>
+        </div>
+
+        <h2>Module 2: Java Basics</h2>
+        <h3>2.1 Variables and Data Types</h3>
+        <p>Variables must be declared with a type. Common types: <code>int</code>, <code>double</code>, <code>char</code>, <code>boolean</code>, <code>String</code>.</p>
+        <pre><code>public class Variables {
+    public static void main(String[] args) {
+        String name = "Alice";  // String
+        int age = 25;          // Integer
+        double height = 5.5;   // Double
+        boolean isStudent = true; // Boolean
+
+        System.out.println(name + " " + age + " " + height + " " + isStudent);
+    }
+}
+</code></pre>
+
+        <h3>2.2 Basic Operations</h3>
+        <p>Arithmetic: <code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>, <code>%</code> (modulus), increment (<code>++</code>), decrement (<code>--</code>).</p>
+        <pre><code>public class Operations {
+    public static void main(String[] args) {
+        int a = 10, b = 3;
+        System.out.println("Sum: " + (a + b));     // 13
+        System.out.println("Product: " + (a * b));  // 30
+        System.out.println("Division: " + (a / b)); // 3 (integer division)
+        System.out.println("Modulus: " + (a % b));  // 1
+    }
+}
+</code></pre>
+
+        <h3>2.3 Strings</h3>
+        <p>Strings are objects in Java, supporting concatenation and methods like <code>length()</code>.</p>
+        <pre><code>public class Strings {
+    public static void main(String[] args) {
+        String greeting = "Hello";
+        String name = "Bob";
+        String message = greeting + ", " + name + "!";
+        System.out.println(message);        // Output: Hello, Bob!
+        System.out.println(greeting.charAt(0)); // Output: H
+        System.out.println(name.length());   // Output: 3
+    }
+}
+</code></pre>
+
+        <h3>2.4 Input from Users</h3>
+        <p>Use <code>Scanner</code> for user input.</p>
+        <pre><code>import java.util.Scanner;
+
+public class Input {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine();
+        System.out.println("Hello, " + name + "!");
+        scanner.close();
+    }
+}
+</code></pre>
+
+        <div class="exercise">
+            <strong>Exercises</strong>:
+            <ol>
+                <li>Create a program that asks for two numbers and prints their sum, difference, product, and quotient.</li>
+                <li>Write a program that asks for a user’s name and age, then prints: "Hi [Name], you are [Age] years old!"</li>
+                <li>Write a program that takes a string input and prints its length.</li>
+            </ol>
+        </div>
+
+        <h2>Module 3: Control Flow</h2>
+        <h3>3.1 Conditionals (if, else if, else)</h3>
+        <p>Use <code>if</code> statements for decision-making.</p>
+        <pre><code>import java.util.Scanner;
+
+public class Conditionals {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();
+        if (age >= 18) {
+            System.out.println("You are an adult.");
+        } else if (age >= 13) {
+            System.out.println("You are a teenager.");
+        } else {
+            System.out.println("You are a child.");
+        }
+        scanner.close();
+    }
+}
+</code></pre>
+
+        <h3>3.2 Comparison and Logical Operators</h3>
+        <p>Comparison: <code>==</code>, <code>!=</code>, <code>&lt;</code>, <code>&gt;</code>, <code>&lt;=</code>, <code>&gt;=</code><br>
+        Logical: <code>&&</code>, <code>||</code>, <code>!</code></p>
+        <pre><code>import java.util.Scanner;
+
+public class Grades {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your score: ");
+        int score = scanner.nextInt();
+        if (score >= 90 && score <= 100) {
+            System.out.println("Grade: A");
+        } else if (score >= 80) {
+            System.out.println("Grade: B");
+        } else {
+            System.out.println("Grade: C or below");
+        }
+        scanner.close();
+    }
+}
+</code></pre>
+
+        <h3>3.3 Loops</h3>
+        <p><strong>For Loop</strong>: Iterate over a range.</p>
+        <pre><code>public class ForLoop {
+    public static void main(String[] args) {
+        for (int i = 0; i < 5; i++) {
+            System.out.println(i);  // Prints 0 to 4
+        }
+    }
+}
+</code></pre>
+        <p><strong>While Loop</strong>: Repeats while a condition is true.</p>
+        <pre><code>public class WhileLoop {
+    public static void main(String[] args) {
+        int count = 1;
+        while (count <= 5) {
+            System.out.println(count);
+            count++;
+        }
+    }
+}
+</code></pre>
+
+        <h3>3.4 Break and Continue</h3>
+        <p><code>break</code>: Exits a loop.<br><code>continue</code>: Skips the current iteration.</p>
+        <pre><code>public class BreakContinue {
+    public static void main(String[] args) {
+        for (int i = 0; i < 10; i++) {
+            if (i == 5) break;  // Stops at 5
+            System.out.println(i);
+        }
+        for (int i = 0; i < 10; i++) {
+            if (i % 2 == 0) continue;  // Skips even numbers
+            System.out.println(i);
+        }
+    }
+}
+</code></pre>
+
+        <div class="exercise">
+            <strong>Exercises</strong>:
+            <ol>
+                <li>Write a program that checks if a number is even or odd.</li>
+                <li>Create a program that prints all numbers from 1 to 10 except 7.</li>
+                <li>Write a program that asks for a password and allows 3 attempts to enter the correct one ("secret").</li>
+            </ol>
+        </div>
+
+        <h2>Module 4: Data Structures</h2>
+        <h3>4.1 Arrays</h3>
+        <p>Arrays store fixed-size sequences of elements.</p>
+        <pre><code>public class Arrays {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3, 4, 5};
+        System.out.println(numbers[0]);  // Output: 1
+        numbers[1] = 10;  // Modify element
+        System.out.println(numbers[1]);  // Output: 10
+    }
+}
+</code></pre>
+
+        <h3>4.2 ArrayList</h3>
+        <p><code>ArrayList</code> (from <code>java.util</code>) is a dynamic array.</p>
+        <pre><code>import java.util.ArrayList;
+
+public class ArrayListExample {
+    public static void main(String[] args) {
+        ArrayList&lt;String&gt; fruits = new ArrayList&lt;&gt;();
+        fruits.add("apple");
+        fruits.add("banana");
+        fruits.add("cherry");
+        System.out.println(fruits.get(0));  // Output: apple
+        fruits.remove(1);  // Remove banana
+        for (String fruit : fruits) {
+            System.out.println(fruit);  // Output: apple, cherry
+        }
+    }
+}
+</code></pre>
+
+        <h3>4.3 HashMap</h3>
+        <p><code>HashMap</code> stores key-value pairs.</p>
+        <pre><code>import java.util.HashMap;
+
+public class HashMapExample {
+    public static void main(String[] args) {
+        HashMap&lt;String, Integer&gt; student = new HashMap&lt;&gt;();
+        student.put("Alice", 20);
+        student.put("Bob", 22);
+        System.out.println(student.get("Alice"));  // Output: 20
+        student.put("Charlie", 21);  // Add key-value pair
+        for (String name : student.keySet()) {
+            System.out.println(name + ": " + student.get(name));
+        }
+    }
+}
+</code></pre>
+
+        <div class="exercise">
+            <strong>Exercises</strong>:
+            <ol>
+                <li>Create an array of 5 integers and print the first and last elements.</li>
+                <li>Write a program using an <code>ArrayList</code> to store 3 names and print them.</li>
+                <li>Create a <code>HashMap</code> to store 3 students’ names and ages, then print them.</li>
+            </ol>
+        </div>
+
+        <h2>Module 5: Methods</h2>
+        <h3>5.1 Defining Methods</h3>
+        <p>Methods are defined within a class with a return type.</p>
+        <pre><code>public class Methods {
+    public static String greet(String name) {
+        return "Hello, " + name + "!";
+    }
+
+    public static void main(String[] args) {
+        System.out.println(greet("Alice"));  // Output: Hello, Alice!
+    }
+}
+</code></pre>
+
+        <h3>5.2 Parameters and Return Values</h3>
+        <pre><code>public class AddMethod {
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        int result = add(5, 3);
+        System.out.println(result);  // Output: 8
+    }
+}
+</code></pre>
+
+        <h3>5.3 Default Parameters (Simulated)</h3>
+        <p>Java doesn’t support default parameters directly; use method overloading.</p>
+        <pre><code>public class Introduce {
+    public static String introduce(String name) {
+        return introduce(name, 18);
+    }
+
+    public static String introduce(String name, int age) {
+        return name + " is " + age + " years old.";
+    }
+
+    public static void main(String[] args) {
+        System.out.println(introduce("Bob"));  // Output: Bob is 18 years old.
+        System.out.println(introduce("Alice", 20));  // Output: Alice is 20 years old.
+    }
+}
+</code></pre>
+
+        <h3>5.4 Scope</h3>
+        <p>Variables have local or instance scope.</p>
+        <pre><code>public class Scope {
+    static int x = 10;  // Class-level (static)
+
+    public static void myMethod() {
+        int x = 5;  // Local
+        System.out.println(x);  // Output: 5
+    }
+
+    public static void main(String[] args) {
+        myMethod();
+        System.out.println(x);  // Output: 10
+    }
+}
+</code></pre>
+
+        <div class="exercise">
+            <strong>Exercises</strong>:
+            <ol>
+                <li>Write a method that calculates the square of a number.</li>
+                <li>Create a method that takes an <code>ArrayList</code> of numbers and returns the maximum.</li>
+                <li>Write a method that converts Celsius to Fahrenheit.</li>
+            </ol>
+        </div>
+
+        <h2>Module 6: Working with Files</h2>
+        <h3>6.1 Reading Files</h3>
+        <p>Use <code>BufferedReader</code> or <code>Files</code> for file reading.</p>
+        <pre><code>import java.io.BufferedReader;
+import java.io.FileReader;
+
+public class ReadFile {
+    public static void main(String[] args) {
+        try (BufferedReader reader = new BufferedReader(new FileReader("example.txt"))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+            }
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
+}
+</code></pre>
+
+        <h3>6.2 Writing Files</h3>
+        <p>Use <code>BufferedWriter</code> or <code>Files</code> for writing.</p>
+        <pre><code>import java.io.BufferedWriter;
+import java.io.FileWriter;
+
+public class WriteFile {
+    public static void main(String[] args) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("example.txt"))) {
+            writer.write("Hello, Java!\n");
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("example.txt", true))) {
+            writer.write("Appending this line.\n");
+        } catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
+}
+</code></pre>
+
+        <div class="exercise">
+            <strong>Exercise</strong>:
+            <ol>
+                <li>Write a program that creates a file and writes 5 user-input names to it.</li>
+                <li>Read the file and print the names in uppercase (use <code>toUpperCase()</code>).</li>
+            </ol>
+        </div>
+
+        <h2>Module 7: Exception Handling</h2>
+        <p>Handle errors using <code>try-catch</code>.</p>
+        <pre><code>import java.util.Scanner;
+
+public class Exceptions {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        try {
+            System.out.print("Enter a number: ");
+            int number = scanner.nextInt();
+            System.out.println(100 / number);
+        } catch (ArithmeticException e) {
+            System.out.println("Cannot divide by zero!");
+        } catch (Exception e) {
+            System.out.println("Invalid input!");
+        } finally {
+            scanner.close();
+        }
+    }
+}
+</code></pre>
+
+        <div class="exercise">
+            <strong>Exercise</strong>:
+            <ol>
+                <li>Write a program that divides two numbers and handles division by zero and invalid input.</li>
+                <li>Create a program that tries to read a file and handles the case where the file doesn’t exist.</li>
+            </ol>
+        </div>
+
+        <h2>Module 8: Java Collections Framework</h2>
+        <h3>8.1 Using Collections</h3>
+        <p>The Collections Framework provides <code>ArrayList</code>, <code>HashMap</code>, <code>HashSet</code>, etc.</p>
+        <pre><code>import java.util.HashSet;
+
+public class HashSetExample {
+    public static void main(String[] args) {
+        HashSet&lt;Integer&gt; numbers = new HashSet&lt;&gt;();
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(2);  // Duplicate ignored
+        numbers.add(3);
+        System.out.println(numbers);  // Output: [1, 2, 3]
+    }
+}
+</code></pre>
+
+        <h3>8.2 Common Methods</h3>
+        <p>Use methods like <code>size()</code>, <code>contains()</code>, and <code>remove()</code>.</p>
+        <pre><code>import java.util.ArrayList;
+
+public class ArrayListMethods {
+    public static void main(String[] args) {
+        ArrayList&lt;Integer&gt; numbers = new ArrayList&lt;&gt;();
+        numbers.add(5);
+        numbers.add(2);
+        numbers.add(9);
+        System.out.println(numbers.contains(2));  // Output: true
+        numbers.remove(Integer.valueOf(2));
+        System.out.println(numbers);  // Output: [5, 9]
+    }
+}
+</code></pre>
+
+        <div class="exercise">
+            <strong>Exercise</strong>:
+            <ol>
+                <li>Write a program that uses a <code>HashMap</code> to store 3 students’ names and grades, then prints them.</li>
+                <li>Create a program that uses a <code>HashSet</code> to store unique numbers and checks if a user-input number exists.</li>
+            </ol>
+        </div>
+
+        <h2>Module 9: Mini Projects</h2>
+        <h3>Project 1: Number Guessing Game</h3>
+        <p>Generate a random number and let the user guess it.</p>
+        <pre><code>import java.util.Random;
+import java.util.Scanner;
+
+public class NumberGuessingGame {
+    public static void main(String[] args) {
+        Random random = new Random();
+        int number = random.nextInt(100) + 1;
+        int attempts = 0;
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            System.out.print("Guess the number (1-100): ");
+            int guess = scanner.nextInt();
+            attempts++;
+            if (guess == number) {
+                System.out.println("Correct! It took " + attempts + " attempts.");
+                break;
+            } else if (guess < number) {
+                System.out.println("Too low!");
+            } else {
+                System.out.println("
